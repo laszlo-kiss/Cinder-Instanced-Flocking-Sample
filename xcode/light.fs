@@ -1,6 +1,6 @@
 #version 400 core
 
-vec4 myColor = vec4(1., 1., 1., 1.);
+vec4 myColor = vec4(1., .9, .9, 1.);
 
 in VS_OUT {
     vec3 N;
@@ -8,9 +8,9 @@ in VS_OUT {
     vec3 V;
 } vs_in;
 
-vec3 diffuse_albedo = vec3(1.);
-vec3 specular_albedo = vec3(1.);
-float specular_power = 12.0;
+vec3 diffuse_albedo = vec3(1.,0.9,0.9);
+vec3 specular_albedo = vec3(1.,0.9,0.9);
+float specular_power = 1.0;
 vec3 ambient = vec3(.09);
 
 out vec4 color;

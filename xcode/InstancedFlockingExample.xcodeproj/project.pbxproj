@@ -17,6 +17,10 @@
 		4F98784C18888369003D8F50 /* light.fs in Sources */ = {isa = PBXBuildFile; fileRef = 4F98784B18888369003D8F50 /* light.fs */; };
 		4F98784D188889D4003D8F50 /* light.vs in Resources */ = {isa = PBXBuildFile; fileRef = 4F98784918888355003D8F50 /* light.vs */; };
 		4F98784E188889D4003D8F50 /* light.fs in Resources */ = {isa = PBXBuildFile; fileRef = 4F98784B18888369003D8F50 /* light.fs */; };
+		4F987850188B46EE003D8F50 /* leader.vs in Sources */ = {isa = PBXBuildFile; fileRef = 4F98784F188B46EE003D8F50 /* leader.vs */; };
+		4F987852188B46FA003D8F50 /* leader.fs in Sources */ = {isa = PBXBuildFile; fileRef = 4F987851188B46FA003D8F50 /* leader.fs */; };
+		4F987853188B4701003D8F50 /* leader.vs in Resources */ = {isa = PBXBuildFile; fileRef = 4F98784F188B46EE003D8F50 /* leader.vs */; };
+		4F987854188B4701003D8F50 /* leader.fs in Resources */ = {isa = PBXBuildFile; fileRef = 4F987851188B46FA003D8F50 /* leader.fs */; };
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		7042E8B3612E4D2C97430C6C /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = BD9DF234873042398317DDFB /* CinderApp.icns */; };
@@ -35,6 +39,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		4F98784918888355003D8F50 /* light.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = light.vs; sourceTree = "<group>"; };
 		4F98784B18888369003D8F50 /* light.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = light.fs; sourceTree = "<group>"; };
+		4F98784F188B46EE003D8F50 /* leader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = leader.vs; sourceTree = "<group>"; };
+		4F987851188B46FA003D8F50 /* leader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = leader.fs; sourceTree = "<group>"; };
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		5A41761703504673A511912E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +145,8 @@
 				5A41761703504673A511912E /* Info.plist */,
 				4F98784918888355003D8F50 /* light.vs */,
 				4F98784B18888369003D8F50 /* light.fs */,
+				4F98784F188B46EE003D8F50 /* leader.vs */,
+				4F987851188B46FA003D8F50 /* leader.fs */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -204,6 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F987853188B4701003D8F50 /* leader.vs in Resources */,
+				4F987854188B4701003D8F50 /* leader.fs in Resources */,
 				4F98784D188889D4003D8F50 /* light.vs in Resources */,
 				4F98784E188889D4003D8F50 /* light.fs in Resources */,
 				7042E8B3612E4D2C97430C6C /* CinderApp.icns in Resources */,
@@ -218,7 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E5020CE0742471690DF71C2 /* InstancedFlockingExampleApp.cpp in Sources */,
+				4F987850188B46EE003D8F50 /* leader.vs in Sources */,
 				4F98784C18888369003D8F50 /* light.fs in Sources */,
+				4F987852188B46FA003D8F50 /* leader.fs in Sources */,
 				4F98784A18888355003D8F50 /* light.vs in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

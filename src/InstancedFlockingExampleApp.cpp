@@ -71,6 +71,9 @@ Particle::Particle( Vec3f _loc, Vec3f _target, int &_id )
     mAcceleration = Vec3f::zero();
     mMass = randFloat(1., 3.);
     mTransform = Matrix44f::identity();
+    float r = randFloat(.1,1.);
+    mTransform.scale( Vec3f(r,r,r) * mMass );//* Vec3f( 0.1f, 150.0f, 0.1f ) );
+
     //mTransform.scale(.5);
 }
 
@@ -136,7 +139,7 @@ void Particle::updateTarget(const Vec3f &newTarget){
 Matrix44f& Particle::getData(){
     mTransform.setTranslate(mLocation);
     Vec3f axis = cross(mLocation,mCurrentTarget).normalized();
-    float theta = acos(mLocation.dot(mCurrentTarget) / (mLocation.length() * mCurrentTarget.length()));
+    float theta = acos(mLocation.dot(mCurrentTarget) / (mLocation.lengthSquared() * mCurrentTarget.lengthSquared()));
     mTransform.rotate(axis,toRadians(theta));
    // mTransform.setScale( Vec3f::one() * .75f );//* Vec3f( 0.1f, 150.0f, 0.1f ) );
     return mTransform;
@@ -152,9 +155,9 @@ public:
     void prepareSettings(Settings* settings);
     
     vector<Particle*> particles;
-    gl::GlslProgRef renderShader;
+    gl::GlslProgRef renderShader, leader;
     gl::Light light;
-    gl::VaoRef mVao;
+    gl::VaoRef mVao, mLeaderVao;
     gl::VboRef mVbo;
     gl::VboRef mElemVbo;
     gl::VboRef mTransformBuffer;
@@ -304,6 +307,17 @@ void InstancedFlockingExampleApp::setup()
 		cout << ex.what() << endl;
 	}
     
+    mFormat.vertex( loadResource( LEADER_VS ) );
+	mFormat.fragment( loadResource( LEADER_FS ) );
+    
+    try {
+		leader = gl::GlslProg::create( mFormat );
+	}
+	catch( gl::GlslProgCompileExc ex ) {
+		cout << ex.what() << endl;
+	}
+
+    
     GLint ulocation = 2;
     
     mTransformBuffer = gl::Vbo::create(GL_ARRAY_BUFFER, matrices.size()*sizeof(Matrix44f), matrices.data());
@@ -316,7 +330,7 @@ void InstancedFlockingExampleApp::setup()
     mTransformBuffer->unbind();
     
     mVao->unbind();
-
+    
     gl::enableDepthRead();
     gl::enableDepthWrite();
 }
@@ -361,7 +375,7 @@ void InstancedFlockingExampleApp::draw()
     
     static int i = 0;
 	// clear out the window with black
-	gl::clear( Color( 0., 0., 0. ) );
+	gl::clear( Color( 0.1, 0.1, 0.1 ) );
     gl::pushMatrices();
     gl::setMatrices(mCam);
     gl::multModelView(Matrix44f::createRotation(Vec3f(0,1,0), toRadians((float)i)));
@@ -373,9 +387,21 @@ void InstancedFlockingExampleApp::draw()
     renderShader->uniform("light", light.getPosition());
     glDrawElementsInstanced(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0, NUMBOIDS);
     renderShader->unbind();
+
+    Matrix44f mat;
+    mat = Matrix44f::identity();
+    mat.translate(light.getPosition());
+    leader->bind();
+    leader->uniform("p", gl::getProjection());
+    leader->uniform("mv", gl::getModelView());
+    leader->uniform("light", light.getPosition());
+    leader->uniform("transformMat", mat);
+    glDrawElements(GL_TRIANGLES,36,GL_UNSIGNED_SHORT,0);
+    leader->unbind();
     mElemVbo->unbind();
     mVao->unbind();
    
+    
     gl::popMatrices();
     i++;
 }
