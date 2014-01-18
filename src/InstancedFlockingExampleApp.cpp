@@ -15,7 +15,7 @@
 
 #include "Resources.h"
 
-#define NUMBOIDS 20000
+#define NUMBOIDS 100
 
 using namespace ci;
 using namespace ci::app;
@@ -86,9 +86,9 @@ void Particle::addForce( const Vec3f &force){
 }
 
 void Particle::applyBehaviors( vector<Particle*> &particles){
-   // Vec3f separateForce = separate(particles);
+    Vec3f separateForce = separate(particles);
     Vec3f seekForce = seek(mCurrentTarget);
-   // addForce(separateForce);
+    addForce(separateForce);
     addForce(seekForce);
 }
 
