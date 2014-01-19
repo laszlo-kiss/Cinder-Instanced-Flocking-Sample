@@ -1,6 +1,6 @@
 #version 400 core
 
-vec4 myColor = vec4(1., 0.9, 0.9, 1.);
+vec4 myColor = vec4(1., 0.8, 0.8, 1.);
 
 in VS_OUT {
     vec3 N;

@@ -15,7 +15,7 @@
 
 #include "Resources.h"
 
-#define NUMBOIDS 100
+#define NUMBOIDS 500
 
 using namespace ci;
 using namespace ci::app;
@@ -150,6 +150,7 @@ class InstancedFlockingExampleApp : public AppNative {
 public:
 	void setup();
 	void mouseDown( MouseEvent event );
+    void keyDown( KeyEvent event );
 	void update();
 	void draw();
     void prepareSettings(Settings* settings);
@@ -171,6 +172,13 @@ void InstancedFlockingExampleApp::prepareSettings( Settings * settings )
     settings->setWindowSize(Vec2i(1280,800));
 }
 
+void InstancedFlockingExampleApp::keyDown(cinder::app::KeyEvent event){
+    if(event.getChar()=='f'){
+        WindowRef window = getWindow();
+        window->setFullScreen();
+    }
+}
+
 void InstancedFlockingExampleApp::setup()
 {
     particles.resize(0);
@@ -180,7 +188,7 @@ void InstancedFlockingExampleApp::setup()
     }
     
     mCam.setPerspective(60, getWindowAspectRatio(), 1., 1000000.);
-    mCam.lookAt(Vec3f(0.,0.,100.),Vec3f::zero(), Vec3f::yAxis());
+    mCam.lookAt(Vec3f(0.,0.,75.),Vec3f::zero(), Vec3f::yAxis());
     
     light = gl::Light(gl::Light::LightType::POINT, 0);
     light.setAmbient(ColorA(0.,0.,0.,1.));
@@ -391,6 +399,7 @@ void InstancedFlockingExampleApp::draw()
     Matrix44f mat;
     mat = Matrix44f::identity();
     mat.translate(light.getPosition());
+    mat.scale(Vec3f::one()*.25);
     leader->bind();
     leader->uniform("p", gl::getProjection());
     leader->uniform("mv", gl::getModelView());

@@ -5,9 +5,9 @@ cCheck dependencies
 cProcessInfoPlistFile /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Info.plist /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/Info.plist
 cCpResource leader.vs build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.vs
 cCpResource light.vs build/Debug/InstancedFlockingExample.app/Contents/Resources/light.vs
+cCpResource light.fs build/Debug/InstancedFlockingExample.app/Contents/Resources/light.fs
 cCpResource /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/resources/CinderApp.icns build/Debug/InstancedFlockingExample.app/Contents/Resources/CinderApp.icns
 cCpResource leader.fs build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs
-cCpResource light.fs build/Debug/InstancedFlockingExample.app/Contents/Resources/light.fs
 cProcessPCH++ /var/folders/9x/zg1gb2r927sg2dg2dggw48xh0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/InstancedFlockingExample_Prefix-crrjxvdirevxmndsryawicptffty/InstancedFlockingExample_Prefix.pch.pch InstancedFlockingExample_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample normal i386
@@ -4549,9 +4549,9 @@ t1389849995
 s459637
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp
-c0000000052DB14850000000000002E65
-t1390089349
-s11877
+c0000000052DB16E10000000000002F61
+t1390089953
+s12129
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/Info.plist
 c0000000052D76D8B0000000000000462
@@ -4564,7 +4564,7 @@ t1389849995
 s301
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app
-t1390089392
+t1390089734
 s102
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Info.plist
@@ -4572,8 +4572,8 @@ t1389850063
 s1533
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample
-t1390089353
-s4521000
+t1390089958
+s4526472
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/PkgInfo
 t1389850063
@@ -4584,7 +4584,7 @@ t1389850063
 s459637
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs
-t1390089444
+t1390089953
 s784
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.vs
@@ -4605,12 +4605,12 @@ t1389850063
 s197
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o
-t1390089350
-s2303196
+t1390089955
+s2307688
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.fs
-c0000000052DB14E40000000000000310
-t1390089444
+c0000000052DB16E10000000000000310
+t1390089953
 s784
 
 N/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.vs
@@ -4641,11 +4641,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies9f5813644c8bb841^f37214644c8bb841^-654"warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.vs' of type sourcecode.glsl for architecture i386warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/light.fs' of type sourcecode.glsl for architecture i386warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.fs' of type sourcecode.glsl for architecture i386warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/light.vs' of type sourcecode.glsl for architecture i3864(21%IDEActivityLogMessage2@163"Warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.vs' of type sourcecode.glsl for architecture i386-411782244#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@162"Warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/light.fs' of type sourcecode.glsl for architecture i386-411782244#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@163"Warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.fs' of type sourcecode.glsl for architecture i386-411782244#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@162"Warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/light.vs' of type sourcecode.glsl for architecture i386-411782244#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"DC72B946-701B-4DD7-9C53-00B3A403A0EE-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies239f83614e8bb841^fddc84614e8bb841^-654"warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.vs' of type sourcecode.glsl for architecture i386warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/light.fs' of type sourcecode.glsl for architecture i386warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.fs' of type sourcecode.glsl for architecture i386warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/light.vs' of type sourcecode.glsl for architecture i3864(21%IDEActivityLogMessage2@163"Warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.vs' of type sourcecode.glsl for architecture i386-411782753#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@162"Warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/light.fs' of type sourcecode.glsl for architecture i386-411782753#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@163"Warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.fs' of type sourcecode.glsl for architecture i386-411782753#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@162"Warning: no rule to process file '/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/light.vs' of type sourcecode.glsl for architecture i386-411782753#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#1#--18"Check dependencies36"4A2C03BE-DEEF-46B1-A543-B63C1BEC1752-
 
 CCompileC ./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s411782149.133542
-e411782150.910268
+s411782753.542296
+e411782755.475653
 r1
 xCompileC
 x./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o
@@ -4668,8 +4668,8 @@ d/Users/destructor/Documents/cinderDev/include/cinder/gl/Light.h
 d/Users/destructor/Documents/cinderDev/include/cinder/gl/Shader.h
 d/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/include/Resources.h
 d/Users/destructor/Documents/cinderDev/include/cinder/CinderResources.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp297"CompileC ./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compilere54122054c8bb841^c009e9064c8bb841^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp0000000000000000^3849"CompileC ./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/InstancedFlockingExample-generated-files.hmap -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/InstancedFlockingExample-own-target-headers.hmap -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/InstancedFlockingExample-all-target-headers.hmap -iquote /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/InstancedFlockingExample-project-headers.hmap -iquote../../../cinderDev/include -iquote../include -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/include -I../../../cinderDev/boost -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/DerivedSources/i386 -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/DerivedSources -F/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug -include /var/folders/9x/zg1gb2r927sg2dg2dggw48xh0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/InstancedFlockingExample_Prefix-crrjxvdirevxmndsryawicptffty/InstancedFlockingExample_Prefix.pch -MMD -MT dependencies -MF /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.d --serialize-diagnostics /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.dia -c /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp -o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o36"4284481D-97FB-4599-B9FB-4AAD7CE0F35D-
-bE853E6F0-6AC4-414D-8C5C-DD6A7B040B2E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp297"CompileC ./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler69708b614e8bb841^b9c479634e8bb841^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp0000000000000000^3849"CompileC ./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/InstancedFlockingExample-generated-files.hmap -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/InstancedFlockingExample-own-target-headers.hmap -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/InstancedFlockingExample-all-target-headers.hmap -iquote /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/InstancedFlockingExample-project-headers.hmap -iquote../../../cinderDev/include -iquote../include -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/include -I../../../cinderDev/boost -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/DerivedSources/i386 -I/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/DerivedSources -F/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug -include /var/folders/9x/zg1gb2r927sg2dg2dggw48xh0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/InstancedFlockingExample_Prefix-crrjxvdirevxmndsryawicptffty/InstancedFlockingExample_Prefix.pch -MMD -MT dependencies -MF /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.d --serialize-diagnostics /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.dia -c /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/src/InstancedFlockingExampleApp.cpp -o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExampleApp.o36"F4106976-6B62-4074-9019-74B9B37F7CE9-
+bD671C370-93EB-4933-B7E4-E891B42EC036
 
 CCpResource /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/resources/CinderApp.icns build/Debug/InstancedFlockingExample.app/Contents/Resources/CinderApp.icns
 s411542863.686591
@@ -4682,14 +4682,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Copy bu
 b8894C931-6425-4861-8746-F2C24230DA16
 
 CCpResource leader.fs build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs
-s411782244.082298
-e411782244.085941
+s411782753.521471
+e411782753.527909
 r1
 xCpResource
 xleader.fs
 xbuild/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Copy build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs90"CpResource leader.fs build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs861e15644c8bb841^7f4d16644c8bb841^---0#0#1#-19%DVTDocumentLocation2@149"file:///Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs0000000000000000^499"CpResource leader.fs build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs    cd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.fs /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Resources36"3B837C55-3117-4436-809D-1BC347683BB5-
-b56B60E6F-E155-4148-A0F3-188ED5A370B5
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Copy build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs90"CpResource leader.fs build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fsca8a85614e8bb841^013288614e8bb841^---0#0#1#-19%DVTDocumentLocation2@149"file:///Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs0000000000000000^499"CpResource leader.fs build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.fs    cd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/leader.fs /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Resources36"68DBBD77-4196-4C55-8A95-455313D74F45-
+bD671C370-93EB-4933-B7E4-E891B42EC036
 
 CCpResource leader.vs build/Debug/InstancedFlockingExample.app/Contents/Resources/leader.vs
 s411782192.940398
@@ -4722,8 +4722,8 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Copy bu
 b81DD1A49-EA97-4733-8A00-534FB61C88D6
 
 CLd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample normal i386
-s411782150.912677
-e411782153.903144
+s411782755.479410
+e411782758.457367
 r1
 xLd
 x/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample
@@ -4807,8 +4807,8 @@ d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
 d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection160"Link /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample97"Ld ./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample normal i3861cb6e9064c8bb841^0935e7094c8bb841^---0#0#1#--1488"Ld ./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample normal i386    cd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug -F/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug -filelist /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExample.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../cinderDev/lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -Xlinker -dependency_info -Xlinker /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExample_dependency_info.dat -o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample36"89C01ECA-1343-4A85-A171-D18CAE1C70C3-
-bE853E6F0-6AC4-414D-8C5C-DD6A7B040B2E
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection160"Link /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample97"Ld ./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample normal i3866dc97a634e8bb841^e71775664e8bb841^---0#0#1#--1488"Ld ./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample normal i386    cd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug -F/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug -filelist /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExample.LinkFileList -mmacosx-version-min=10.7 -dead_strip ../../../cinderDev/lib/libcinder_d.a -stdlib=libc++ -framework Cocoa -framework OpenGL -framework CoreVideo -framework QTKit -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -Xlinker -dependency_info -Xlinker /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/InstancedFlockingExample.build/Debug/InstancedFlockingExample.build/Objects-normal/i386/InstancedFlockingExample_dependency_info.dat -o /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app/Contents/MacOS/InstancedFlockingExample36"65545E98-DDFE-4A64-8A60-E01E8EBBE923-
+bD671C370-93EB-4933-B7E4-E891B42EC036
 
 CProcessInfoPlistFile /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/build/Debug/InstancedFlockingExample.app/Contents/Info.plist /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/Info.plist
 s411542863.683635
@@ -6458,11 +6458,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Precomp
 b8894C931-6425-4861-8746-F2C24230DA16
 
 CTouch /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app
-s411782244.101545
-e411782244.105060
+s411782758.458623
+e411782758.462104
 r1
 xTouch
 x/Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Touch /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app48"Touch ./build/Debug/InstancedFlockingExample.app4a081a644c8bb841^71e71a644c8bb841^---0#0#1#--267"Touch ./build/Debug/InstancedFlockingExample.app    cd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode    /usr/bin/touch -c /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app36"ADA7DC6E-BE20-424A-9095-2351077118A9-
-b56B60E6F-E155-4148-A0F3-188ED5A370B5
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Touch /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app48"Touch ./build/Debug/InstancedFlockingExample.app3a7575664e8bb841^3c4d76664e8bb841^---0#0#1#--267"Touch ./build/Debug/InstancedFlockingExample.app    cd /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode    /usr/bin/touch -c /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/./build/Debug/InstancedFlockingExample.app36"E903C539-38C1-4C27-913E-97693A6BC35E-
+bD671C370-93EB-4933-B7E4-E891B42EC036
 
