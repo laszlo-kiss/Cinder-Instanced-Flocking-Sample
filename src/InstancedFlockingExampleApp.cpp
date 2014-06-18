@@ -14,10 +14,11 @@
 #include "cinder/TriMesh.h"
 #include "cinder/GeomIo.h"
 #include "cinder/gl/Context.h"
+#include "cinder/ObjLoader.h"
 
 #include "Resources.h"
 
-#define NUMBOIDS 400
+const int NUMBOIDS = 300;
 
 using namespace ci;
 using namespace ci::app;
@@ -169,7 +170,7 @@ public:
 
 void InstancedFlockingExampleApp::prepareSettings( Settings * settings )
 {
-    settings->setWindowSize(Vec2i(1280,800));
+    settings->setFullScreen();
 }
 
 void InstancedFlockingExampleApp::keyDown(cinder::app::KeyEvent event){
@@ -191,22 +192,24 @@ void InstancedFlockingExampleApp::setup()
     mCam.lookAt(Vec3f(0.,0.,75.),Vec3f::zero(), Vec3f::yAxis());
     
     mNoiseScale = 20.f;
-        
+    
     tMesh = TriMesh::create( geom::Cube().enable(geom::Attrib::POSITION).enable(geom::Attrib::NORMAL) );
+ //   ObjLoader loader( loadAsset("penis_centered.obj"));
+	//tMesh = TriMesh::create(loader);
     
     mVao = gl::Vao::create();
     mPosVbo = gl::Vbo::create( GL_ARRAY_BUFFER, tMesh->getNumVertices() * sizeof(Vec3f), tMesh->getVertices<3>());
     mNormVbo = gl::Vbo::create( GL_ARRAY_BUFFER, tMesh->getNormals().size() * sizeof(Vec3f), tMesh->getNormals().data());
     mElemVbo = gl::Vbo::create(GL_ELEMENT_ARRAY_BUFFER, tMesh->getNumIndices()*sizeof(uint32_t), tMesh->getIndices().data() );
     
-    gl::VaoScope vao(mVao);
+    gl::ScopedVao vao(mVao);
     {
-        gl::BufferScope vbo(mPosVbo);
+        gl::ScopedBuffer vbo(mPosVbo);
         gl::vertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vec3f), 0);
         gl::enableVertexAttribArray(0);
     }
     {
-        gl::BufferScope vbo(mNormVbo);
+        gl::ScopedBuffer vbo(mNormVbo);
         gl::vertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vec3f), 0);
         gl::enableVertexAttribArray(1);
     }
@@ -245,7 +248,7 @@ void InstancedFlockingExampleApp::setup()
     
     mTransformBuffer = gl::Vbo::create(GL_ARRAY_BUFFER, matrices.size()*sizeof(Matrix44f), matrices.data());
     {
-        gl::BufferScope trans(mTransformBuffer);
+        gl::ScopedBuffer trans(mTransformBuffer);
         
        //set up 4 attribute locations to represent the 4 columns of each transform matrix, only hefty grphics cards support 16 float vertex attribs
         for (unsigned int i = 0; i < 4 ; i++) {
@@ -262,6 +265,7 @@ void InstancedFlockingExampleApp::setup()
 
 void InstancedFlockingExampleApp::mouseDown( MouseEvent event )
 {
+    
 }
 
 void InstancedFlockingExampleApp::update()
@@ -299,12 +303,12 @@ void InstancedFlockingExampleApp::draw()
 	gl::clear( Color( 0.1, 0.1, 0.1 ) );
     gl::pushMatrices();
     gl::setMatrices(mCam);
-    gl::multModelView(Matrix44f::createRotation(Vec3f(0,1,0), toRadians((float)i)));
-    gl::VaoScope vao(mVao);
-    gl::BufferScope elements(mElemVbo);
+    gl::multModelMatrix(Matrix44f::createRotation(Vec3f(0,1,0), toRadians((float)i)));
+    gl::ScopedVao vao(mVao);
+    gl::ScopedBuffer elements(mElemVbo);
     {
-        gl::GlslProgScope glsl(renderShader);
-        renderShader->uniform("p", gl::getProjection());
+        gl::ScopedGlslProg glsl(renderShader);
+        renderShader->uniform("p", gl::getProjectionMatrix());
         renderShader->uniform("mv", gl::getModelView());
         renderShader->uniform("light", light);
         glDrawElementsInstanced(GL_TRIANGLES, tMesh->getNumIndices(), GL_UNSIGNED_INT, 0, NUMBOIDS);
@@ -315,8 +319,8 @@ void InstancedFlockingExampleApp::draw()
         mat = Matrix44f::identity();
         mat.translate(light);
         mat.scale(Vec3f::one()*.25);
-        gl::GlslProgScope glsl(leader);
-        leader->uniform("p", gl::getProjection());
+        gl::ScopedGlslProg glsl(leader);
+        leader->uniform("p", gl::getProjectionMatrix());
         leader->uniform("mv", gl::getModelView());
         leader->uniform("light", light);
         leader->uniform("transformMat", mat);

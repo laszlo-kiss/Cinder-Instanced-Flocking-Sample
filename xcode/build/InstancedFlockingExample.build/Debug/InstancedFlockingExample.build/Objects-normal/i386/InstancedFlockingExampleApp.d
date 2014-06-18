@@ -13,5 +13,15 @@ dependencies: \
   ../../../cinder_next/include/cinder/TriMesh.h \
   ../../../cinder_next/include/cinder/AxisAlignedBox.h \
   ../../../cinder_next/include/cinder/gl/Context.h \
+  ../../../cinder_next/include/cinder/ObjLoader.h \
+  ../../../cinder_next/boost/boost/tuple/tuple_comparison.hpp \
+  ../../../cinder_next/boost/boost/tuple/tuple.hpp \
+  ../../../cinder_next/boost/boost/tuple/detail/tuple_basic.hpp \
+  ../../../cinder_next/boost/boost/type_traits/cv_traits.hpp \
+  ../../../cinder_next/boost/boost/type_traits/add_cv.hpp \
+  /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/../../../cinder_next/boost/boost/type_traits/detail/type_trait_def.hpp \
+  /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/../../../cinder_next/boost/boost/type_traits/detail/template_arity_spec.hpp \
+  /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/../../../cinder_next/boost/boost/type_traits/detail/type_trait_undef.hpp \
+  ../../../cinder_next/boost/boost/type_traits/remove_volatile.hpp \
   /Users/destructor/Documents/cinderDevApps/InstancedFlockingExample/xcode/../include/Resources.h \
   ../../../cinder_next/include/cinder/CinderResources.h

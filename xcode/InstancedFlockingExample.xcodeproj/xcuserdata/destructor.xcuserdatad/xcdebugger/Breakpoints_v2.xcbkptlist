@@ -10,11 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../src/InstancedFlockingExampleApp.cpp"
-            timestampString = "412281153.246233"
+            timestampString = "413226787.263052"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170">
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "InstancedFlockingExampleApp::prepareSettings( Settings * settings )"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
